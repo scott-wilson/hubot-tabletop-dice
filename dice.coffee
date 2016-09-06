@@ -1,3 +1,18 @@
+# Description:
+#   Allows Hubot to roll dice
+#
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
+# Commands:
+#   hubot roll <num>d<sides> [<num>d<sides>] - Roll a dice a number of times. Adding dice will roll them also.
+#
+# Author:
+#   scott.wilson
+
 module.exports = (robot) ->
   robot.respond /roll (.+)/i, (res) ->
     dice = res.match[1]
